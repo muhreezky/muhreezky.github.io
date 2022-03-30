@@ -12,6 +12,6 @@ Semoga game ini dapat menghibur sekaligus menambah wawasan.
 Terima kasih untuk mencoba :)
 Game ini akan terus dikembangkan menuju lebih baik lagi
 
-Support developer di [https://trakteer.id/muh_reezky](Trakteer)
+Support developer di [Trakteer](https://trakteer.id/muh_reezky)
 
 Sekian ;)
