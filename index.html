@@ -22,14 +22,18 @@
         </div>
         <ul class="nav-links">
           <li>
-            <a href=".">Home</a>
+            <a href="#about">Tentang</a>
           </li>
           <li>
             <a href="#education">Pendidikan</a>
           </li>
           <li>
-            <a href="#about">Tentang</a>
+            <a href="#experiences">Pengalaman</a>
           </li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#organisasi">Organisasi</a></li>
+          <li><a href="#certifs">Sertifikat</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
         </ul>
         <div class="nav-hamburger" id="nav-hamburger">
           <div class="line"></div>
@@ -38,6 +42,17 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section id="about"></section>
+    </main>
+    <script>
+      const hamburger = document.getElementById("nav-hamburger");
+      const links = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        links.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
