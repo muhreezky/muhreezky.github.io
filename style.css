@@ -264,6 +264,16 @@ h6 {
   }
 }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experiences > .card > ul {
+  display: grid;
+  gap: 15px;
+}
+
 .react-logo:hover {
   cursor: pointer;
   animation: animate-rotate 6s infinite linear !important;
@@ -325,6 +335,24 @@ main {
 .my-photo {
   border-radius: 20px;
   filter: drop-shadow(0 0 5px #000);
+}
+
+.portfo-articles {
+  display: grid;
+  gap: 35px;
+}
+
+.portfo-articles > article {
+  display: grid;
+  gap: 10px;
+}
+
+.portfo-articles > article > img {
+  max-width: 100%;
+}
+
+.portfo-articles > article > header > h1,h2,h3,h4,h5,h6 {
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
