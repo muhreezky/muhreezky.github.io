@@ -22,14 +22,18 @@
         </div>
         <ul class="nav-links">
           <li>
-            <a href=".">Home</a>
+            <a href="#about">Tentang</a>
           </li>
           <li>
             <a href="#education">Pendidikan</a>
           </li>
           <li>
-            <a href="#about">Tentang</a>
+            <a href="#experiences">Pengalaman</a>
           </li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#organisasi">Organisasi</a></li>
+          <li><a href="#certifs">Sertifikat</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
         </ul>
         <div class="nav-hamburger" id="nav-hamburger">
           <div class="line"></div>
@@ -38,6 +42,89 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section id="about">
+        <div class="card">
+          <h1>Siapakah saya?</h1>
+          <div class="about-me" style="margin-bottom: 20px">
+            <div style="text-align: center">
+              <img
+                style="max-width: 200px"
+                class="my-photo"
+                loading="lazy"
+                src="./images/me.jpg"
+              />
+            </div>
+            <div>
+              Saya adalah Muhammad Rizkiansyah, seorang Web Developer yang
+              berpengalaman dalam Full Stack Development. Berbekal kemampuan
+              dalam PHP dan Javascript, serta dengan penggunaan framework, saya
+              telah membuat beberapa project yang dapat digunakan secara publik.
+              Dengan pengalaman dan kemampuan yang saya miliki, saya berambisi
+              untuk dapat menjadi seorang talenta digital yang kompetitif dan
+              kolaboratif di dalam karir saya di bidang digital khususnya dalam
+              Software Development.
+            </div>
+          </div>
+          <div>
+            <h2>Tech Stack</h2>
+            <div class="tech-stacks">
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/h/84/html.svg" />
+                <div>HTML</div>
+              </section>
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/c/18/css.svg" />
+                <div>CSS</div>
+              </section>
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/j/44/javascript.svg" />
+                <div>Javascript</div>
+              </section>
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/t/96/typescript.svg" />
+                <div>Typescript</div>
+              </section>
+              <section style="text-align: center">
+                <img
+                  class="react-logo"
+                  src="https://www.cdnlogo.com/logos/r/63/react.svg"
+                />
+                <div>React</div>
+              </section>
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/n/80/next-js.svg" />
+                <div>Next.js</div>
+              </section>
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/v/69/vue.svg" />
+                <div>Vue</div>
+              </section>
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/s/6/svelte.svg">
+                <div>Svelte</div>
+              </section>
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/l/23/laravel.svg">
+                <div>Laravel</div>
+              </section>
+              <section style="text-align: center">
+                <img src="https://www.cdnlogo.com/logos/n/94/nodejs-icon.svg">
+                <div>Node.js</div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const hamburger = document.getElementById("nav-hamburger");
+      const links = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        links.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
