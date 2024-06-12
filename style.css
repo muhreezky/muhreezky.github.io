@@ -204,9 +204,74 @@ html {
 
 .card {
   box-shadow: #222 6px 5px 5px;
-  padding: 10px 15px;
+  padding: 20px 30px;
   border-radius: 10px;
   border: 1.7px solid #e5e5e5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.tech-stacks img {
+  max-width: 100px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* .tech-stacks > div,section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+} */
+
+.tech-stacks > section {
+  display: grid;
+  /* grid-template-columns: repeat(1, fr); */
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-stacks {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@keyframes animate-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-bounce {
+  0%,
+  100% {
+    transform: translateY(-10%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.react-logo:hover {
+  cursor: pointer;
+  animation: animate-rotate 6s infinite linear !important;
+}
+
+.tech-stacks img:hover {
+  cursor: pointer;
+  animation: animate-bounce 1s infinite linear;
 }
 
 .w-full {
@@ -226,7 +291,7 @@ main {
   padding: 15px 20px;
   border: 0;
   border-radius: 10px;
-  transition: transform .1s ease-in-out, background-color .05s ease-in-out;
+  transition: transform 0.1s ease-in-out, background-color 0.05s ease-in-out;
   color: white;
 }
 
@@ -251,7 +316,26 @@ main {
   transform: scale(0.91);
 }
 
+.about-me {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.my-photo {
+  border-radius: 20px;
+  filter: drop-shadow(0 0 5px #000);
+}
+
 @media screen and (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+  }
+
+  .tech-stacks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .nav-links {
     position: absolute;
     top: 100%;
