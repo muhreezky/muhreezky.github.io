@@ -354,8 +354,20 @@ main {
   max-width: 100%;
 }
 
-.portfo-articles > article > header > h1,h2,h3,h4,h5,h6 {
+.portfo-articles > article > header > h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
+}
+
+.certif-article {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
