@@ -21,19 +21,13 @@
           >
         </div>
         <ul class="nav-links">
-          <li>
-            <a href="#about">Tentang</a>
-          </li>
-          <li>
-            <a href="#education">Pendidikan</a>
-          </li>
-          <li>
-            <a href="#experiences">Pengalaman</a>
-          </li>
-          <li><a href="#skills">Skill</a></li>
-          <li><a href="#organisasi">Organisasi</a></li>
-          <li><a href="#certifs">Sertifikat</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#experiences">Pengalaman</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#certifs">Sertifikat</a></li>
+          <li><a href="#organisasi">Organisasi</a></li>
+          <li><a href="#education">Pendidikan</a></li>
         </ul>
         <div class="nav-hamburger" id="nav-hamburger">
           <div class="line"></div>
@@ -49,9 +43,9 @@
           <div class="about-me" style="margin-bottom: 20px">
             <div style="text-align: center">
               <img
+                loading="lazy"
                 style="max-width: 200px"
                 class="my-photo"
-                loading="lazy"
                 src="./images/me.jpg"
               />
             </div>
@@ -66,53 +60,195 @@
               Software Development.
             </div>
           </div>
-          <div>
-            <h2>Tech Stack</h2>
-            <div class="tech-stacks">
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/h/84/html.svg" />
-                <div>HTML</div>
+        </div>
+      </section>
+      <section id="experiences" class="experiences">
+        <div class="card">
+          <h2>Pengalaman</h2>
+          <ul>
+            <li>
+              <div style="display: flex; justify-content: space-between">
+                <h3 style="margin: 0">IT Development Staff</h3>
+                <div>Januari 2024 - Sekarang</div>
+              </div>
+              <div>LSP Tambang Minerba Indonesia</div>
+              <ul style="list-style-type: square">
+                <li>
+                  Membangun dan melakukan maintenance sistem sertifikasi
+                  berbasis website yang mematuhi standar BNSP untuk Sertifikasi
+                  Jarak Jauh (SJJ)
+                </li>
+                <li>
+                  Memperbaiki performance dengan mengurangi kode-kode yang tidak
+                  dibutuhkan
+                </li>
+                <li>
+                  Membuat komponen kode terpisah untuk mengurangi pengulangan
+                  kode
+                </li>
+                <li>
+                  Berkolaborasi dengan tim kerja melalui platform GitHub dan
+                  Linear.app
+                </li>
+                <li>
+                  Men-deploy aplikasi ke tahap produksi menggunakan cPanel
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div style="display: flex; justify-content: space-between">
+                <h3 style="margin: 0">Freelancer dan Solopreneur</h3>
+                <div>Oktober 2022 - Sekarang</div>
+              </div>
+              <div>Freelance</div>
+              <ul style="list-style-type: square">
+                <li>
+                  Membuat website dan aplikasi sesuai dengan fitur-fitur yang
+                  diminta oleh client
+                </li>
+                <li>
+                  Membangun project personal yang dapat digunakan untuk umum
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="card">
+          <h2>Skill</h2>
+          <div class="tech-stacks">
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/h/84/html.svg"
+              />
+              <div>HTML</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/c/18/css.svg"
+              />
+              <div>CSS</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/j/44/javascript.svg"
+              />
+              <div>Javascript</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/t/96/typescript.svg"
+              />
+              <div>Typescript</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                class="react-logo"
+                src="https://www.cdnlogo.com/logos/r/63/react.svg"
+              />
+              <div>React</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/n/80/next-js.svg"
+              />
+              <div>Next.js</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/v/69/vue.svg"
+              />
+              <div>Vue</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/s/6/svelte.svg"
+              />
+              <div>Svelte</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/l/23/laravel.svg"
+              />
+              <div>Laravel</div>
+            </section>
+            <section style="text-align: center">
+              <img
+                loading="lazy"
+                src="https://www.cdnlogo.com/logos/n/94/nodejs-icon.svg"
+              />
+              <div>Node.js</div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="card">
+          <h2>Portfolio</h2>
+          <div class="portfo-articles">
+            <article>
+              <header>
+                <h3 style="margin: 0">Kana Charenji</h3>
+              </header>
+              <img
+                style="max-width: 100%"
+                loading="lazy"
+                src="./images/keynerdy.png"
+              />
+              <section>
+                Sebuah permainan sederhana untuk mempelajari huruf-huruf alfabet
+                Jepang (Katakana dan Hiragana). Pemain diberi waktu untuk
+                menemukan mana jawaban yang paling benar di setiap pertanyaan.
+                Jika nyawa habis, maka permainan berakhir
               </section>
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/c/18/css.svg" />
-                <div>CSS</div>
+            </article>
+            <article>
+              <header>
+                <h3 style="margin: 0">Oddity Coffee Points</h3>
+              </header>
+              <img
+                loading="lazy"
+                style="max-width: 100%"
+                src="./images/oddity.png"
+                alt="Oddity Coffee Points"
+              />
+              <section>
+                Aplikasi loyalty program berbasis web yang memungkinkan
+                penggunanya mendapatkan bonus cashback setelah melakukan
+                pembayaran dalam jumlah tertentu di outlet Oddity Coffee
               </section>
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/j/44/javascript.svg" />
-                <div>Javascript</div>
+            </article>
+            <article>
+              <header>
+                <h3>Rahazzia</h3>
+              </header>
+              <img
+                src="./images/rahazzia.png"
+                alt="Rahazzia App"
+                loading="lazy"
+              />
+              <section>
+                Aplikasi berbasis web untuk menerima dan mengirim pesan rahasia
+                kepada pemilik akun, dibuat menggunakan full stack Next.js dan
+                MongoDB Prisma
               </section>
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/t/96/typescript.svg" />
-                <div>Typescript</div>
-              </section>
-              <section style="text-align: center">
-                <img
-                  class="react-logo"
-                  src="https://www.cdnlogo.com/logos/r/63/react.svg"
-                />
-                <div>React</div>
-              </section>
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/n/80/next-js.svg" />
-                <div>Next.js</div>
-              </section>
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/v/69/vue.svg" />
-                <div>Vue</div>
-              </section>
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/s/6/svelte.svg">
-                <div>Svelte</div>
-              </section>
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/l/23/laravel.svg">
-                <div>Laravel</div>
-              </section>
-              <section style="text-align: center">
-                <img src="https://www.cdnlogo.com/logos/n/94/nodejs-icon.svg">
-                <div>Node.js</div>
-              </section>
-            </div>
+              <a
+                class="button poppins-bold no-decoration"
+                href="https://rahazzia.vercel.app"
+                target="_blank"
+                >Lihat</a
+              >
+            </article>
           </div>
         </div>
       </section>
